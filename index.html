@@ -5,14 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BarMisaki Manage</title>
   <style>
-    html, body { margin: 0; width: 100%; height: 100%; background: #f8fafc; }
-    iframe { width: 100%; height: 100%; border: 0; display: block; background: #f8fafc; }
-    .fallback { position: fixed; inset: 0; display: grid; place-items: center; color: #0f172a; font-family: system-ui, sans-serif; text-align: center; padding: 24px; }
-    .fallback a { color: #7c3aed; }
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(circle at 50% 0%, #ede9fe, transparent 42%), #f8fafc;
+      color: #0f172a;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      padding: 24px;
+    }
+    main {
+      width: min(100%, 440px);
+      border: 1px solid #e2e8f0;
+      border-radius: 24px;
+      background: rgba(255,255,255,.92);
+      box-shadow: 0 24px 80px rgba(15,23,42,.10);
+      padding: 32px;
+      text-align: center;
+    }
+    .mark {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 24px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: #7c3aed;
+      color: white;
+      font-weight: 800;
+      font-size: 22px;
+    }
+    p { color: #64748b; line-height: 1.8; }
+    a {
+      margin-top: 24px;
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: #0f172a;
+      color: white;
+      padding: 0 22px;
+      text-decoration: none;
+      font-weight: 800;
+    }
+    a:hover { background: #7c3aed; }
   </style>
 </head>
 <body>
-  <iframe src="https://barmisaki-manage.yuuki-n-yugichu400.chatgpt.site/dashboard" title="BarMisaki admin site" allow="fullscreen" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <noscript><div class="fallback"><p>BarMisaki運営サイトを表示するにはJavaScriptを有効にしてください。<br><a href="https://barmisaki-manage.yuuki-n-yugichu400.chatgpt.site/dashboard">運営サイトを開く</a></p></div></noscript>
+  <main>
+    <div class="mark">M</div>
+    <h1>BarMisaki 運営サイト</h1>
+    <p>管理画面はログイン保護があるため、この入口から運営サイトを開きます。</p>
+    <a href="https://barmisaki-manage.yuuki-n-yugichu400.chatgpt.site/dashboard" target="_top" rel="noreferrer">運営サイトを開く</a>
+  </main>
 </body>
 </html>
